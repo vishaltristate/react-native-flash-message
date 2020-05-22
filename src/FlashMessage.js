@@ -227,7 +227,7 @@ export const DefaultFlash = ({
             </Text>
             {!!renderCustomContent && renderCustomContent(message)}
             {hasDescription && (
-              <Text style={[styles.flashText, !!message.color && { color: message.color }, textStyle]}>
+              <Text numberOfLines={2} style={[styles.flashText, !!message.color && { color: message.color }, textStyle]}>
                 {message.description}
               </Text>
             )}
